@@ -19,18 +19,18 @@ body {
     background: #14743D;
     color: #FFF;
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 0.5em 1em; }
     #app > header a {
       color: #FFF;
       text-decoration: none; }
     #app > header h1 {
-      flex: 1;
+      order: 2;
       font-size: 1.4em;
       line-height: 1em; }
     #app > header svg#logo {
-      float: left;
+      order: 1;
       margin-right: 1em;
       height: 40px; }
       #app > header svg#logo g path {
@@ -38,23 +38,20 @@ body {
         stroke: none; }
       #app > header svg#logo g:hover path {
         fill: #069; }
-    #app > header nav#primary li {
-      display: inline-block; }
-      #app > header nav#primary li a {
-        padding: 1em; }
-      #app > header nav#primary li ul {
-        display: none; }
-    #app > header form#search {
-      background: #069; }
-      #app > header form#search fieldset {
-        border: 0; }
-        #app > header form#search fieldset label[for=q] {
-          display: block;
-          font-weight: bold;
-          margin: 1em 0 0.5em 0; }
-        #app > header form#search fieldset input[name=q] {
-          font-size: 1.6em;
-          padding: 0.25em 0.5em; }
+    #app > header nav#primary {
+      order: 4; }
+      #app > header nav#primary li {
+        display: inline-block; }
+        #app > header nav#primary li a {
+          padding: 1em; }
+        #app > header nav#primary li ul {
+          display: none; }
+    #app > header input[name=q] {
+      order: 3;
+      flex: 2;
+      font-size: 1.6em;
+      padding: 0.25em 0.5em;
+      margin: 0 1em; }
   #app > main {
     font: 1em/1.4em Helvetica, Arial, sans-serif;
     margin: 1em;

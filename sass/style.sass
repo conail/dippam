@@ -19,18 +19,18 @@ body
     background: #14743D
     color: #FFF
     display: flex
-    flex-direction: row
     align-items: center
+    justify-content: space-between
     padding: 0.5em 1em
     a
       color: #FFF
       text-decoration: none
     h1
-      flex: 1
+      order: 2
       font-size: 1.4em
       line-height: 1em
     svg#logo
-      float: left
+      order: 1
       margin-right: 1em
       height: 40px
       g
@@ -40,23 +40,20 @@ body
         &:hover path
           fill: #069
     nav#primary
+      order: 4
       li
         display: inline-block
         a
           padding: 1em
         ul
           display: none
-    form#search
-      background: #069
-      fieldset
-        border: 0
-        label[for=q]
-          display: block
-          font-weight: bold
-          margin: 1em 0 0.5em 0
-        input[name=q]
-          font-size: 1.6em
-          padding: 0.25em 0.5em
+    input[name=q]
+      order: 3
+      flex: 2
+      font-size: 1.6em
+      padding: 0.25em 0.5em
+      margin: 0 1em
+        
   > main
     font: 1em/1.4em Helvetica, Arial, sans-serif
     margin: 1em
