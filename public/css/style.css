@@ -16,11 +16,20 @@ body {
       color: #FFF;
       text-decoration: none; }
     #app > header h1 {
+      clear: right;
+      float: left;
       font-size: 1.8em;
       margin: 0; }
     #app > header h2 {
+      float: left;
       font-size: 1.4em;
       margin: 0; }
+    #app > header svg#logo {
+      float: left;
+      width: 8em; }
+      #app > header svg#logo g path {
+        fill: #FFF;
+        stroke: none; }
     #app > header nav#primary li {
       display: inline-block; }
       #app > header nav#primary li a {
