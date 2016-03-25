@@ -75,9 +75,11 @@ body {
       display: inline-block;
       padding: 1em; }
 
-#home #collections .collection {
-  background: #DDD;
-  margin: 0 0 1em 0;
-  padding: 1em; }
-  #home #collections .collection h2 {
-    font-size: 1.4em; }
+#home #collections {
+  display: flex; }
+  #home #collections .collection {
+    background: #DDD;
+    margin: 0.5em;
+    padding: 1em; }
+    #home #collections .collection h2 {
+      font-size: 1.4em; }
