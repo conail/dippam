@@ -26,20 +26,18 @@ body {
     #app > header a#home {
       display: block; }
       #app > header a#home h1 {
-        font-size: 1.8em;
-        line-height: 1em;
-        margin: 0; }
-      #app > header a#home h2 {
-        font-size: 0.8em;
+        font-size: 1.6em;
         line-height: 1em;
         margin: 0; }
       #app > header a#home svg#logo {
         float: left;
         margin-right: 1em;
-        width: 3em; }
+        height: 40px; }
         #app > header a#home svg#logo g path {
           fill: #FFF;
           stroke: none; }
+        #app > header a#home svg#logo g:hover path {
+          fill: #069; }
     #app > header nav#primary {
       display: block; }
       #app > header nav#primary li {
