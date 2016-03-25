@@ -43,9 +43,16 @@ body {
       #app > header nav#primary li {
         display: inline-block; }
         #app > header nav#primary li a {
+          display: block;
           padding: 1em; }
         #app > header nav#primary li ul {
-          display: none; }
+          background: #444;
+          display: none;
+          position: absolute; }
+        #app > header nav#primary li:hover ul {
+          display: block; }
+          #app > header nav#primary li:hover ul li {
+            display: block; }
     #app > header input[name=q] {
       order: 3;
       flex: 2;

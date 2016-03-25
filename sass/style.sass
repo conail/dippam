@@ -44,9 +44,17 @@ body
       li
         display: inline-block
         a
+          display: block
           padding: 1em
         ul
+          background: #444
           display: none
+          position: absolute
+        &:hover
+          ul
+            display: block
+            li
+              display: block
     input[name=q]
       order: 3
       flex: 2
