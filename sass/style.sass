@@ -1,4 +1,57 @@
-*
-  font-size: 1em
+body
   margin: 0
   padding: 0
+  min-height: 100%
+  
+#app
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  > header
+    font-family: Helvetica, Arial, sans-serif
+    background: #000
+    color: #FFF
+    padding: 1em
+    a
+      color: #FFF
+      text-decoration: none
+    h1
+      font-size: 1.8em
+      margin: 0
+    h2
+      font-size: 1.4em
+      margin: 0
+    nav#primary
+      li
+        display: inline-block
+        a
+          display: block
+          padding: 1em
+        ul
+          display: none
+    form#search
+      background: #069
+      fieldset
+        border: 0
+        label[for=q]
+          display: block
+          font-weight: bold
+          margin: 1em 0 0.5em 0
+        input[name=q]
+          font-size: 1.6em
+          padding: 0.25em 0.5em
+  > main
+    font: 1em/1.4em Helvetica, Arial, sans-serif
+    margin: 1em
+    width: 60em
+    p
+      margin: 0 0 1.6em 0
+  > footer
+    background: #000
+    color: #FFF
+    h1
+      padding: 1em
+    ul
+      li
+        display: inline-block
+        padding: 1em

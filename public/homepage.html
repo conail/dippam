@@ -9,21 +9,32 @@
       <header>
 	<h1><a href="/">DIPPAM</a></h1>
 	<h2><a href="/">Documenting Ireland: Parliament, People and Migration</a></h2> 
-	<nav> 
+	<nav id="primary"> 
 	  <ul> 
-	    <li class="about"><a href="">About DIPPAM</a>
+	    <li class="about"><a href="">About</a>
               <ul>
 		<li><a href="/the-project">Project Team</a></li> 
 		<li><a href="/contact">Contact</a></li>
 	      </ul>
             </li>
-	    <li class="eppi"><a href="/eppi">Eppi Collection</a></li>
-	    <li class="ied"><a href="/ied">IED Collection</a></li> 
-	    <li class="vmr"><a href="/vmr">VMR Collection</a></li> 
-	    <li class="searchall"><a href="/search">Search All Databases</a></li>
+	    <li class="collections">
+	      <a href="">Collections</a>
+	      <ul>
+		<li class="eppi"><a href="/eppi">EPPI Collection</a></li>
+		<li class="ied"><a href="/ied">IED Collection</a></li> 
+		<li class="vmr"><a href="/vmr">VMR Collection</a></li>
+	      </ul>
+	    </li>
 	    <li class="ethical"><a href="/ethical-use-policy">Ethical Use</a></li> 
 	    <li class="links"><a href="/links">Links</a></li>
-	  </ul> 
+	  </ul>
+	  <form id="search">
+	    <fieldset>
+	      <label for="q">Search</label>
+	      <input name="q" type="search" placeholder="Query" />
+	      <input type="submit" value="Search" />
+	    </fieldset>
+	  </form>
 	</nav>
       </header> 
       <main class="home"> 
