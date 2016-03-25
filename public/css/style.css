@@ -61,8 +61,9 @@ body {
       margin: 0 1em; }
   #app > main {
     font: 1em/1.4em Helvetica, Arial, sans-serif;
-    margin: 1em;
-    width: 60em; }
+    margin: 1em; }
+    #app > main h1 {
+      font-size: 1.6em; }
     #app > main p {
       margin: 0 0 1.6em 0; }
   #app > footer {
@@ -73,3 +74,10 @@ body {
     #app > footer ul li {
       display: inline-block;
       padding: 1em; }
+
+#home #collections .collection {
+  background: #DDD;
+  margin: 0 0 1em 0;
+  padding: 1em; }
+  #home #collections .collection h2 {
+    font-size: 1.4em; }
