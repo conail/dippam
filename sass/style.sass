@@ -1,7 +1,15 @@
-body
+*
+  font: normal 1em/1.5em Helvetica, Arial, sans-serif
   margin: 0
   padding: 0
+
+html
   min-height: 100%
+  
+body
+  min-height: 100%
+  padding: 0
+  margin: 0
   
 #app
   display: flex
@@ -15,23 +23,26 @@ body
     a
       color: #FFF
       text-decoration: none
-    h1
-      clear: right
-      float: left
-      font-size: 1.8em
-      margin: 0
-    h2
-      float: left
-      font-size: 1.4em
-      margin: 0
-    svg#logo
-      float: left
-      width: 8em
-      g
-        path
-          fill: #FFF
-          stroke: none
+    a#home
+      display: block
+      h1
+        font-size: 1.8em
+        line-height: 1em
+        margin: 0
+      h2
+        font-size: 0.8em
+        line-height: 1em
+        margin: 0
+      svg#logo
+        float: left
+        margin-right: 1em
+        width: 3em
+        g
+          path
+            fill: #FFF
+            stroke: none
     nav#primary
+      display: block
       li
         display: inline-block
         a
