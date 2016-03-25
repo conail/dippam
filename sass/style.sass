@@ -16,35 +16,33 @@ body
   flex-direction: column
   min-height: 100%
   > header
-    font-family: Helvetica, Arial, sans-serif
-    background: #000
+    background: #14743D
     color: #FFF
-    padding: 1em
+    display: flex
+    flex-direction: row
+    align-items: center
+    padding: 0.5em 1em
     a
       color: #FFF
       text-decoration: none
-    a#home
-      display: block
-      h1
-        font-size: 1.6em
-        line-height: 1em
-        margin: 0
-      svg#logo
-        float: left
-        margin-right: 1em
-        height: 40px
-        g
-          path
-            fill: #FFF
-            stroke: none
-          &:hover path
-            fill: #069
+    h1
+      flex: 1
+      font-size: 1.4em
+      line-height: 1em
+    svg#logo
+      float: left
+      margin-right: 1em
+      height: 40px
+      g
+        path
+          fill: #FFF
+          stroke: none
+        &:hover path
+          fill: #069
     nav#primary
-      display: block
       li
         display: inline-block
         a
-          display: block
           padding: 1em
         ul
           display: none

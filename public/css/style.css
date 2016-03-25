@@ -16,37 +16,34 @@ body {
   flex-direction: column;
   min-height: 100%; }
   #app > header {
-    font-family: Helvetica, Arial, sans-serif;
-    background: #000;
+    background: #14743D;
     color: #FFF;
-    padding: 1em; }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5em 1em; }
     #app > header a {
       color: #FFF;
       text-decoration: none; }
-    #app > header a#home {
-      display: block; }
-      #app > header a#home h1 {
-        font-size: 1.6em;
-        line-height: 1em;
-        margin: 0; }
-      #app > header a#home svg#logo {
-        float: left;
-        margin-right: 1em;
-        height: 40px; }
-        #app > header a#home svg#logo g path {
-          fill: #FFF;
-          stroke: none; }
-        #app > header a#home svg#logo g:hover path {
-          fill: #069; }
-    #app > header nav#primary {
-      display: block; }
-      #app > header nav#primary li {
-        display: inline-block; }
-        #app > header nav#primary li a {
-          display: block;
-          padding: 1em; }
-        #app > header nav#primary li ul {
-          display: none; }
+    #app > header h1 {
+      flex: 1;
+      font-size: 1.4em;
+      line-height: 1em; }
+    #app > header svg#logo {
+      float: left;
+      margin-right: 1em;
+      height: 40px; }
+      #app > header svg#logo g path {
+        fill: #FFF;
+        stroke: none; }
+      #app > header svg#logo g:hover path {
+        fill: #069; }
+    #app > header nav#primary li {
+      display: inline-block; }
+      #app > header nav#primary li a {
+        padding: 1em; }
+      #app > header nav#primary li ul {
+        display: none; }
     #app > header form#search {
       background: #069; }
       #app > header form#search fieldset {
