@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 400 570"
+   version="1.1">
+  <g id="logo">
+    <path style="fill:#000; stroke:none;" d="m 87,0   296,0  40,180 -296,0 z" id="b1"/>
+    <path style="fill:#000; stroke:none;" d="m 0,375  425,0  0,-180 -400,0 z" id="b2"/>
+    <path style="fill:#000; stroke:none;" d="m 76,392 348,0 -40,180 -370,0 z" id="b3"/>
+  </g>
+</svg>
+
