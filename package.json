@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "if-env": "^1.0.0",
+    "json-loader": "^0.5.4",
     "lodash": "^4.6.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
