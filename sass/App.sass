@@ -26,6 +26,7 @@ body
   min-height: 100%
   > header
     background: $colDippam
+    box-shadow: 2px 0 2px #333
     color: #FFF
     display: flex
     align-items: center
@@ -111,12 +112,16 @@ body
 #home
   #collections
     display: flex
+    justify-content: space-between
     .collection
-      background: #DDD
-      margin: 0.5em
+      border: 1px solid #EEE
       padding: 1em
+      width: 30%
       h2
         font-size: 1.4em
+        height: 3.6em
+      p
+        text-align: left
       button
         background: #000
         border: 0
