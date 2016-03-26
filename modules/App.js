@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
 import AppHeader from './AppHeader';
+import AppFooter from './AppFooter';
 
 export default class App extends React.Component {
   render() {
@@ -11,16 +12,7 @@ export default class App extends React.Component {
       <main>
         {this.props.children}
       </main>
-      <footer>
-	<h1>Sponsors</h1>
-	<ul>
-	  <li>Queen's University Belfast</li>
-	  <li>The Mellon Centre</li>
-	  <li>Arts and Humanities Research Council</li>
-	  <li>University of Ulster</li>
-	  <li>Libraries NI</li>
-	</ul>
-      </footer>
+      <AppFooter/>
     </div>;
   }
 }
