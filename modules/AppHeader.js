@@ -1,21 +1,16 @@
 import React from 'react';
 import NavLink from './NavLink';
+import Logo from './Logo';
 
 export default class AppHeader extends React.Component {
   render() {
     return <header>
-      <svg id="logo" viewBox="0 0 43 56">
-        <g>
-	  <path d="m 9,0  30,0  4,18 -30,0 z"/>
-	  <path d="m 0,37 43,0 0,-18 -40,0 z"/>
-	  <path d="m 8,38 35,0 -4,18 -37,0 z"/>
-	</g>
-      </svg>
-      <h1><a href="/">DIPPAM</a></h1> 
+      <Logo/>
+      <h1><NavLink to="/">DIPPAM</NavLink></h1> 
       <nav id="primary"> 
         <ul> 
-          <li className="collections">
-	    <a href="">Collections</a>
+          <li>
+	    <NavLink to="/collections">Collections</NavLink>
 	    <ul>
               <li><NavLink to="/collections/eppi">EPPI Collection</NavLink></li>
 	      <li><NavLink to="/collections/ied">IED Collection</NavLink></li> 
