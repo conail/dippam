@@ -62,12 +62,18 @@ body
             li
               display: block
     input[name=q]
+      border: 0
       order: 3
       flex: 2
       font-size: 1.4em
       padding: 0.25em 0.5em
       margin: 0 1em
-        
+  &.eppi > header
+    background: #069
+  &.ied > header
+    background: #385
+  &.vmr > header
+    background: #090
   > main
     font: 1em/1.4em Helvetica, Arial, sans-serif
     margin: 1em
@@ -101,3 +107,22 @@ body
         border: 0
         color: #FFF
         padding: 0.5em 1em
+
+#search
+  display: flex
+  margin: -1em
+  #query
+    background: #CCC
+    width: 16em
+    padding: 1em
+    fieldset
+      border: 0
+      legend
+        font: 1.2em Museo
+        margin: 0 0 0.5em 0
+      label
+        display: block
+        input[type=checkbox]
+          margin: 0 0.5em 0.5em 0
+        select
+          width: 100%
