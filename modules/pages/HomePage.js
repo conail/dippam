@@ -1,4 +1,5 @@
 import React from 'react';
+import CollectionShort from '../CollectionShort';
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -15,19 +16,9 @@ export default class HomePage extends React.Component {
         <p>{dippam.description}</p>
       </div>
       <div id="collections">
-        { collections.map(i => <Collection key={i.id} {...i}/>) }
+        { collections.map((i) => {return <CollectionShort key={i.id} {...i}/>}) }
       </div>
       {this.props.children}
-    </div>;
-  }
-}
-
-class Collection extends React.Component {
-  render() {
-    return <div className={this.props.id + ' collection'}>
-      <h2>{this.props.title}</h2>
-      <p>{this.props.description}</p>
-      <button>Browse</button>
     </div>;
   }
 }
