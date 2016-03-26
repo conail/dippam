@@ -4,7 +4,7 @@ import App    from './App';
 import AboutPage  from './pages/AboutPage';
 import HomePage   from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
-import CollectionPage from './CollectionPage';
+import CollectionPage from './pages/CollectionPage';
 
 module.exports = <Route path="/" component={App}>
   <IndexRoute component={HomePage}/>
