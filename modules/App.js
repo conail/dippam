@@ -7,7 +7,7 @@ export default class App extends React.Component {
 
     return <div id="app">
       <header>
-	<svg id="logo" viewbox="0 0 43 56">
+	<svg id="logo" viewBox="0 0 43 56">
 	  <g>
 	    <path d="m 9,0  30,0  4,18 -30,0 z"/>
 	    <path d="m 0,37 43,0 0,-18 -40,0 z"/>
@@ -17,21 +17,21 @@ export default class App extends React.Component {
 	<h1><a href="/">DIPPAM</a></h1> 
 	<nav id="primary"> 
 	  <ul> 
-	    <li class="collections">
+	    <li className="collections">
 	      <a href="">Collections</a>
 	      <ul>
-		<li class="eppi"><a href="/eppi">EPPI Collection</a></li>
-		<li class="ied"><a href="/ied">IED Collection</a></li> 
-		<li class="vmr"><a href="/vmr">VMR Collection</a></li>
+		<li className="eppi"><a href="/eppi">EPPI Collection</a></li>
+		<li className="ied"><a href="/ied">IED Collection</a></li> 
+		<li className="vmr"><a href="/vmr">VMR Collection</a></li>
 	      </ul>
 	    </li>
-	    <li class="about"><a href="">About</a>
+	    <li className="about"><a href="">About</a>
               <ul>
 		<li><a href="/the-project">Project Team</a></li> 
 		<li><a href="/contact">Contact</a></li>
 	      </ul>
             </li>
-	    <li class="ethical"><a href="/ethical-use-policy">Ethical Use</a></li> 
+	    <li className="ethical"><a href="/ethical-use-policy">Ethical Use</a></li> 
 	  </ul>
 	</nav>
 	<input name="q" type="search" placeholder="Query" />
