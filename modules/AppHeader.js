@@ -5,8 +5,7 @@ import Logo from './Logo';
 export default class AppHeader extends React.Component {
   render() {
     return <header>
-      <Logo/>
-      <h1><NavLink to="/">DIPPAM</NavLink></h1> 
+      <NavLink to="/"><Logo/></NavLink>
       <nav id="primary"> 
         <ul> 
           <li>
