@@ -1,3 +1,8 @@
+$colDippam: #14743D
+$colEppi: #069
+$colIed: #D70060
+$colVmr: #61AE24
+
 @font-face 
   font-family: Museo
   src: url('/fonts/Museo.otf')
@@ -20,7 +25,7 @@ body
   flex-direction: column
   min-height: 100%
   > header
-    background: #14743D
+    background: $colDippam
     color: #FFF
     display: flex
     align-items: center
@@ -66,16 +71,28 @@ body
       font-size: 1.4em
       padding: 0.25em 0.5em
       margin: 0 1em
-  &.eppi > header
-    background: #069
-  &.ied > header
-    background: #385
-  &.vmr > header
-    background: #090
+  &.eppi
+    > header
+      background: $colEppi
+    > main
+      h1, h2, h3
+        color: $colEppi
+  &.ied
+    > header
+      background: $colIed
+    > main
+      h1, h2, h3
+        color: $colIed
+  &.vmr
+    > header
+      background: $colVmr
+    > main
+      color: $colVmr
   > main
     font: 1em/1.4em Helvetica, Arial, sans-serif
     margin: 1em
     h1, h2, h3
+      color: $colDippam
       font-family: Museo
     h1
       font-size: 1.6em
