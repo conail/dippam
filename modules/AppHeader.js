@@ -17,9 +17,9 @@ export default class AppHeader extends React.Component {
           <li className="collections">
 	    <a href="">Collections</a>
 	    <ul>
-              <li className="eppi"><a href="/eppi">EPPI Collection</a></li>
-	      <li className="ied"><a href="/ied">IED Collection</a></li> 
-	      <li className="vmr"><a href="/vmr">VMR Collection</a></li>
+              <li><NavLink to="/collections/eppi">EPPI Collection</NavLink></li>
+	      <li><NavLink to="/collections/ied">IED Collection</NavLink></li> 
+	      <li><NavLink to="/collections/vmr">VMR Collection</NavLink></li>
 	    </ul>
 	  </li>
 	  <li className="about"><a href="">About</a>
