@@ -9,4 +9,5 @@ module.exports = <Route path="/" component={App}>
   <IndexRoute component={Home}/>
   <Route path="/search" component={Search}/>
   <Route path="/about" component={About}/>
+  <Route path="/collections" component={Home}/>
 </Route>;
