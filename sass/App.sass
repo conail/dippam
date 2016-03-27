@@ -107,14 +107,26 @@ body
     ul
       margin: -1em 0 1em 2em
   > footer
-    background: #000
+    background: $colDippam
     color: #FFF
-    h1
+    font-size: 0.9em
+    h3
+      font: 1em Museo
+    a
+      color: #FFF
+    > div
       padding: 1em
-    ul
+    .sponsors
+      background: #333
       li
         display: inline-block
-        padding: 1em
+        margin: 0 1em 0 0
+  &.eppi > footer
+    background: $colEppi
+  &.ied > footer
+    background: $colIed
+  &.vmr > footer
+    background: $colVmr
 
 #home
   #collections
