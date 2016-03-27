@@ -1,7 +1,7 @@
 $colDippam: #14743D
 $colEppi: #069
 $colIed: #D70060
-$colVmr: #61AE24
+$colVmr: #16A995
 $titleFont: normal 1em Museo
 $headingFont: 1em Lato
 
@@ -62,7 +62,7 @@ body
     input[name=q]
       border: 0
       order: 3
-      flex: 2
+      flex: 1
       font-size: 1.4em
       padding: 0.25em 0.5em
       margin: 0 1em
@@ -101,14 +101,17 @@ body
     h3
       font-size: 1.2em
       margin: 0 0 0.3em 0
-  a
-    color: #069
-  p
-    margin: 0 0 1.6em 0
-  p + ul
-    margin-top: -1em
-  ul
-    margin: 0 0 1em 2em
+    a
+      color: #069
+    p
+      margin: 0 0 1.6em 0
+    p + ul
+      margin-top: -1em
+    ul
+      margin: 0 0 1em 2em
+    dl
+      dt
+        font-weight: bold
   > footer
     background: $colDippam
     color: #FFF
@@ -164,7 +167,7 @@ body
     margin: 0 0 0.5em 0
   #query
     background: #EEE
-    border-right: 1px solid #CCC
+    color: #222
     width: 16em
     padding: 1em
     fieldset
@@ -193,6 +196,8 @@ body
     margin: 0
     table
       border-collapse: collapse
+      display: table
+      width: 100%
       thead
         tr
           th
@@ -200,6 +205,11 @@ body
             color: #222
             padding: 1em 0.5em
             text-align: left
+      tbody
         tr
+          border-bottom: 1px solid #DDD 
           td
-            padding: 1em
+            padding: 0.5em
+            vertical-align: text-top
+          &:nth-child(2n)
+            background: #F9F9F9
