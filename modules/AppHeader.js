@@ -11,9 +11,24 @@ export default class AppHeader extends React.Component {
           <li>
 	    <NavLink to="/collections">Collections</NavLink>
 	    <ul>
-              <li><NavLink to="/collections/eppi">EPPI: Enhanced British Parliamentary Papers on Ireland</NavLink></li>
-	      <li><NavLink to="/collections/ied">IED: Irish Emigration Database</NavLink></li> 
-	      <li><NavLink to="/collections/vmr">VMR: Voices of Migration and Return</NavLink></li>
+              <li>
+                <NavLink to="/collections/eppi">
+                  <h3>EPPI:</h3>
+                  Enhanced British Parliamentary Papers on Ireland
+               </NavLink>
+              </li>
+	      <li>
+                <NavLink to="/collections/ied">
+                  <h3>IED:</h3>
+                  Irish Emigration Database
+                </NavLink>
+              </li> 
+	      <li>
+                <NavLink to="/collections/vmr">
+                  <h3>VMR:</h3>
+                  Voices of Migration and Return
+                </NavLink>
+              </li>
 	    </ul>
 	  </li>
 	  <li className="about"><a href="">About</a>
