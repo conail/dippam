@@ -5,6 +5,7 @@ import AboutPage  from './pages/AboutPage';
 import HomePage   from './pages/HomePage';
 import SearchPage from './pages/SearchPage';
 import CollectionPage from './pages/CollectionPage';
+import EthicalUsePolicyPage from './pages/EthicalUsePolicyPage';
 
 module.exports = <Route path="/" component={App}>
   <IndexRoute component={HomePage}/>
@@ -12,4 +13,5 @@ module.exports = <Route path="/" component={App}>
   <Route path="/about" component={AboutPage}/>
   <Route path="/collections" component={HomePage}/>
   <Route path="/collections/:collection" component={CollectionPage}/>
+  <Route path="/policies/ethical-use" component={EthicalUsePolicyPage}/>
 </Route>;
