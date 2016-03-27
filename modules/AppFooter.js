@@ -2,6 +2,8 @@ import React from 'react';
 
 export default class AppFooter extends React.Component {
   render() {
+    const year = new Date().getFullYear();
+
     return <footer>
       <div className="sponsors">
         <h3>Sponsors</h3>
@@ -26,6 +28,7 @@ export default class AppFooter extends React.Component {
           UK
         </address>
       </div>
+      <p className="copyright">Copyright &copy; {year} DIPPAM.  All Rights Reserved.</p>
     </footer>;
   }
 }
