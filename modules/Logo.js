@@ -16,7 +16,7 @@ export default class Logo extends React.Component {
 	  <path d="m 8,38 35,0 -4,18 -37,0 z"/>
         </g>
       </svg>
-      <h1>DIPPAM</h1>
+      <h1>{this.props.params.collection || 'DIPPAM'}</h1>
     </div>;
   }
 }

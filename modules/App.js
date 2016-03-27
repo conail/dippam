@@ -8,7 +8,7 @@ export default class App extends React.Component {
     let year = new Date().getFullYear();
 
     return <div id="app" className={this.props.params.collection}>
-      <AppHeader/>
+      <AppHeader {...this.props}/>
       <main>
         {this.props.children}
       </main>
