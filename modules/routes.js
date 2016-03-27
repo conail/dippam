@@ -13,7 +13,7 @@ module.exports = <Route path="/" component={App}>
   <Route path="/search" component={SearchPage}/>
   <Route path="/about" component={AboutPage}/>
   <Route path="/collections" component={HomePage}/>
-  <Route path="/collections/:collection" component={CollectionPage}/>
+  <Route path="/collections/:collection" component={SearchPage}/>
   <Route path="/policies/ethical-use" component={EthicalUsePolicyPage}/>
   <Route path="/team" component={TeamPage}/>
 </Route>;
