@@ -1,6 +1,7 @@
 import React from 'react';
 import NavLink from './NavLink';
 import Logo from './Logo';
+import { browserHistory } from 'react-router';
 
 export default class AppHeader extends React.Component {
   render() {
@@ -11,7 +12,11 @@ export default class AppHeader extends React.Component {
 	<NavLink to="/team">About</NavLink>
       	<NavLink to="/policies/ethical-use">Ethical Use</NavLink>
       </nav>
-      <input name="q" type="search" placeholder="Search Query" />
+      <input name="q" type="search" placeholder="Search Query" onChange={this.query} />
     </header>;
+  }
+
+  query(e) {
+    browserHistory.push("/search?q=" + e.target.value);
   }
 }

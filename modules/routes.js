@@ -15,5 +15,5 @@ module.exports = <Route path="/" component={App}>
   <Route path="/collections" component={HomePage}/>
   <Route path="/collections/:collection" component={CollectionPage}/>
   <Route path="/policies/ethical-use" component={EthicalUsePolicyPage}/>
-  <Route path="/about/team" component={TeamPage}/>
+  <Route path="/team" component={TeamPage}/>
 </Route>;

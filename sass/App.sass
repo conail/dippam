@@ -58,7 +58,6 @@ body
       a
         display: inline-block
         padding: 1.2em 0.7em 
-        font: $headingFont
         line-height: 1em
     input[name=q]
       border: 0
@@ -90,6 +89,9 @@ body
     h1, h2, h3
       color: $colDippam
       font: $headingFont
+      a
+        color: inherit
+        text-decoration: none
     h1
       font-size: 1.6em
       margin: 1em 0 1.5em 0
@@ -99,6 +101,8 @@ body
     h3
       font-size: 1.2em
       margin: 0 0 0.3em 0
+  a
+    color: #069
   p
     margin: 0 0 1.6em 0
   p + ul
@@ -159,19 +163,26 @@ body
   h1
     margin: 0 0 0.5em 0
   #query
-    background: #CCC
+    background: #EEE
+    border-right: 1px solid #CCC
     width: 16em
     padding: 1em
     fieldset
       border: 0
       position: relative
+      margin: 0 0 1em 0
       legend
-        font: 1.2em Museo
-        margin: 0 0 0.5em 0
+        font: $headingFont
+        font-size: 1.2em
+        margin: 0 0 0.7em 0
       label
         display: block
+        span
+          display: block
         input[type=checkbox]
-          margin: 0 0.5em 0.5em 0
+          margin: 0 0.3em 0.4em 0
+          & + span
+            display: inline
         select
           width: 100%
       .toggle
@@ -179,5 +190,16 @@ body
         top: 0
         right: 0
   #results
-    margin: 1em
-  
+    margin: 0
+    table
+      border-collapse: collapse
+      thead
+        tr
+          th
+            background: #EEE
+            color: #222
+            padding: 1em 0.5em
+            text-align: left
+        tr
+          td
+            padding: 1em
