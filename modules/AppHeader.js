@@ -7,38 +7,9 @@ export default class AppHeader extends React.Component {
     return <header>
       <NavLink to="/"><Logo {...this.props}/></NavLink>
       <nav id="primary"> 
-        <ul> 
-          <li>
-	    <NavLink to="/collections">Collections</NavLink>
-	    <ul>
-              <li>
-                <NavLink to="/collections/eppi">
-                  <h3>EPPI:</h3>
-                  Enhanced British Parliamentary Papers on Ireland
-               </NavLink>
-              </li>
-	      <li>
-                <NavLink to="/collections/ied">
-                  <h3>IED:</h3>
-                  Irish Emigration Database
-                </NavLink>
-              </li> 
-	      <li>
-                <NavLink to="/collections/vmr">
-                  <h3>VMR:</h3>
-                  Voices of Migration and Return
-                </NavLink>
-              </li>
-	    </ul>
-	  </li>
-	  <li className="about"><a href="">About</a>
-            <ul>
-	      <li><NavLink to="/about/team">Project Team</NavLink></li> 
-	      <li><a href="/contact">Contact</a></li>
-	    </ul>
-          </li>
-	  <li><NavLink to="/policies/ethical-use">Ethical Use</NavLink></li> 
-        </ul>
+        <NavLink to="/collections">Collections</NavLink>
+	<NavLink to="/team">About</NavLink>
+      	<NavLink to="/policies/ethical-use">Ethical Use</NavLink>
       </nav>
       <input name="q" type="search" placeholder="Search Query" />
     </header>;

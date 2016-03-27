@@ -55,32 +55,11 @@ body
           stop-color: #FFF
     nav#primary
       order: 4
-      ul
-        margin: 0
-      li
+      a
         display: inline-block
-        a
-          display: block
-          padding: 1.2em 0.7em 
-          font: $headingFont
-          line-height: 1em
-        ul
-          box-shadow: 0 2px 2px #999
-          background: #FFF
-          display: none
-          position: absolute
-          li
-            border-bottom: 1px solid #CCC
-          a
-            color: #000
-            padding: 0.5em
-        &:hover
-          ul
-            display: block
-            li
-              display: block
-              &:hover
-                background: #EEE
+        padding: 1.2em 0.7em 
+        font: $headingFont
+        line-height: 1em
     input[name=q]
       border: 0
       order: 3
