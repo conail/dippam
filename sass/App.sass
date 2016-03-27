@@ -33,7 +33,7 @@ body
     display: flex
     align-items: center
     justify-content: space-between
-    padding: 0.5em 1em
+    padding: 0.25em 1em
     a
       color: #FFF
       text-decoration: none
@@ -55,21 +55,31 @@ body
           stop-color: #FFF
     nav#primary
       order: 4
+      ul
+        margin: 0
       li
         display: inline-block
         a
           display: block
-          padding: 1em
+          padding: 1.2em 0.7em 
           font: $headingFont
+          line-height: 1em
         ul
-          background: #444
+          box-shadow: 0 2px 2px #999
+          background: #FFF
           display: none
           position: absolute
+          li
+            border-bottom: 1px solid #CCC
+          a
+            color: #000
         &:hover
           ul
             display: block
             li
               display: block
+              &:hover
+                background: #EEE
     input[name=q]
       border: 0
       order: 3
@@ -102,17 +112,19 @@ body
       font: $headingFont
     h1
       font-size: 1.6em
-      margin: 0 0 1em 0
+      margin: 1em 0 1.5em 0
     h2
       font-size: 1.4em
+      margin: 0 0 0.8em 0
     h3
       font-size: 1.2em
-    p
-      margin: 0 0 1.6em 0
-    p + ul
-      margin-top: -1em
-    ul
-      margin: 0 0 1em 2em
+      margin: 0 0 0.3em 0
+  p
+    margin: 0 0 1.6em 0
+  p + ul
+    margin-top: -1em
+  ul
+    margin: 0 0 1em 2em
   > footer
     background: $colDippam
     color: #FFF
@@ -124,10 +136,14 @@ body
       margin: 0 0 0.6em 0
     a
       color: #FFF
+    p
+      margin: 0 0 0.4em 0
     > div
       padding: 1em
     .sponsors
       background: #333
+      ul
+        margin: 0
       li
         display: inline-block
         margin: 0 1em 0 0

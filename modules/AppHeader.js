@@ -25,7 +25,7 @@ export default class AppHeader extends React.Component {
 	  <li><NavLink to="/policies/ethical-use">Ethical Use</NavLink></li> 
         </ul>
       </nav>
-      <input name="q" type="search" placeholder="Query" />
+      <input name="q" type="search" placeholder="Search Query" />
     </header>;
   }
 }
