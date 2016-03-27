@@ -131,12 +131,8 @@ class FacetList extends React.Component {
     return <fieldset>
       <legend>{this.props.title}</legend>
       <a href="" className="toggle">{this.allSelected ? 'None' : 'All'}</a>
-      {this.state.items.map(x => <FacetItem key={x.id} {...x} onChange={this.handleChange}/>)}
+      {this.state.items.map(x => <FacetItem key={x.id} {...x}/>)}
     </fieldset>
-  }
-
-  handleChange(e) {
-    console.log(34)
   }
 
   allSelected() {
