@@ -9,7 +9,6 @@ import routes from './modules/routes';
 var app = express();
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'public')));
-
 app.get('*', (req, res) => {
   match({ routes, location: req.url }, (err, redirect, props) => {
     if (err) return res.status(500).send(err.message);
