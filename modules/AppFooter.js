@@ -10,7 +10,7 @@ export default class AppFooter extends React.Component {
           <li><a href="http://www.qub.ac.uk/cms">The Mellon Centre</a></li>
 	  <li><a href="">Arts and Humanities Research Council</a></li>
 	  <li><a href="http://www.socsci.ulster.ac.uk/policy/index.html">University of Ulster</a></li>
-	  <li><a href="">Libraries NI</li>
+	  <li><a href="">Libraries NI</a></li>
         </ul>
       </div>
       <div className="contact">

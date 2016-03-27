@@ -18,7 +18,7 @@ export default class AppHeader extends React.Component {
 	  </li>
 	  <li className="about"><a href="">About</a>
             <ul>
-	      <li><a href="/the-project">Project Team</a></li> 
+	      <li><NavLink to="/about/team">Project Team</NavLink></li> 
 	      <li><a href="/contact">Contact</a></li>
 	    </ul>
           </li>
