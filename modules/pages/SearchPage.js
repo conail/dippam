@@ -117,7 +117,7 @@ export default class SearchPage extends React.Component {
       </div>
     </div>;
   }
-};
+}
 
 class FacetList extends React.Component {
   constructor(props) {
