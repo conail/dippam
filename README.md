@@ -1,3 +1,8 @@
+[![Code Climate](https://codeclimate.com/github/dippam/client/badges/gpa.svg)](https://codeclimate.com/github/dippam/client)
+[![Test Coverage](https://codeclimate.com/github/dippam/client/badges/coverage.svg)](https://codeclimate.com/github/dippam/client/coverage)
+[![Issue Count](https://codeclimate.com/github/dippam/client/badges/issue_count.svg)](https://codeclimate.com/github/dippam/client)
+[![Circle CI](https://circleci.com/gh/dippam/client.svg?style=svg)](https://circleci.com/gh/dippam/client)
+
 # Documenting Ireland: Parliament, People and Migration
 
 DIPPAM is an online virtual archive of documents and sources relating to the history of Ireland, and its migration experience from the 18th to the late 20th centuries.
