@@ -2,6 +2,8 @@ $colDippam: #14743D
 $colEppi: #069
 $colIed: #D70060
 $colVmr: #61AE24
+$titleFont: normal 1em Museo
+$headingFont: 1em Lato
 
 @font-face 
   font-family: Museo
@@ -56,6 +58,7 @@ body
         a
           display: block
           padding: 1em
+          font: $headingFont
         ul
           background: #444
           display: none
@@ -94,7 +97,7 @@ body
     margin: 1em
     h1, h2, h3
       color: $colDippam
-      font-family: Museo
+      font: $headingFont
     h1
       font-size: 1.6em
       margin: 0 0 1em 0
@@ -113,7 +116,10 @@ body
     color: #FFF
     font-size: 0.9em
     h3
-      font: 1em Museo
+      font: $headingFont
+      letter-spacing: 0.07em
+      font-size: 1.1em
+      margin: 0 0 0.6em 0
     a
       color: #FFF
     > div
