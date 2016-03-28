@@ -2,7 +2,7 @@
 
 ## Enhanced Parliamentary Papers on Ireland
 
-EPPI documents are licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported (CC BY-NC-ND) 3.0 License.
+EPPI documents are licensed under a Creative Commons [Attribution-NonCommercial-NoDerivatives 4.0 International](http://creativecommons.org/licenses/by-nc-nd/4.0/) License.
 
 You are free to Share - to copy, distribute and transmit the work under the following conditions:
 
