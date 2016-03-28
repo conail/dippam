@@ -1,4 +1,4 @@
-# Ethical Use Polic
+# Ethical Use Policy
 
 ## Enhanced Parliamentary Papers on Ireland
 
