@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 export default class AppFooter extends React.Component {
   render() {
@@ -27,6 +28,12 @@ export default class AppFooter extends React.Component {
           BT7 1NN
           UK
         </address>
+      </div>
+      <div className="policy">
+        <ul>
+          <li><Link to="/policy/privacy">Privacy Policy</Link></li>
+          <li><Link to="/policy/ethical-use">Ethical Use Policy</Link></li>
+        </ul>
       </div>
       <p className="copyright">Copyright &copy; {year} DIPPAM.  All Rights Reserved.</p>
     </footer>;

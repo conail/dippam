@@ -17,7 +17,7 @@ export default class AppHeader extends React.Component {
       <nav id="primary"> 
         <NavLink to="/collections">Collections</NavLink>
 	<NavLink to="/about">About</NavLink>
-      	<NavLink to="/policies/ethical-use">Ethical Use</NavLink>
+      	<NavLink to="/policy/ethical-use">Ethical Use</NavLink>
       </nav>
       <input name="q" type="search" placeholder="Search Query" onChange={this.query} value={this.props.params.query} />
     </header>;
