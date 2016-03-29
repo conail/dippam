@@ -8,30 +8,34 @@ export default class SearchPage extends React.Component {
 
   render() {
     const documentTypes = [ 
-      "Account",
-      "Bill",
-      "Report",
-      "Command Paper",
-      "Diaries and Journals",
-      "Family Papers",
-      "Folklore, Song, Music",
-      "Hansard",
-      "Letters (Emigrants)",
-      "Letters (Other)",
-      "Births, Deaths, Marriages",
-      "Newspapers Extracts",
-      "Shipping Advertisements",
-      "Shipping News",
-      "Official Documents",
-      "Periodical Extracts",
-      "Statistics",
-      "Wills"
+      {id: '', name: 'Account', collection: ''},
+      {id: '', name: 'Bill', collection: ''},
+      {id: '', name: 'Report', collection: ''},
+      {id: '', name: 'Command Paper', collection: ''},
+      {id: '', name: 'Diaries and Journals', collection: ''},
+      {id: '', name: 'Family Papers', collection: ''},
+      {id: '', name: 'Folklore, Song, Music', collection: ''},
+      {id: '', name: 'Hansard', collection: ''},
+      {id: '', name: 'Letters (Emigrants)', collection: ''},
+      {id: '', name: 'Letters (Other)', collection: ''},
+      {id: '', name: 'Births, Deaths, Marriages', collection: ''},
+      {id: '', name: 'Newspapers Extracts', collection: ''},
+      {id: '', name: 'Shipping Advertisements', collection: ''},
+      {id: '', name: 'Shipping News', collection: ''},
+      {id: '', name: 'Official Documents', collection: ''},
+      {id: '', name: 'Periodical Extracts', collection: ''},
+      {id: '', name: 'Statistics', collection: ''},
+      {id: '', name: 'Wills', collection: ''}
+    ];
+
+    const collections = [
+      {id: '', name: 'Enhanced British Parliamentary Papers on Ireland' },
+      {id: '', name: 'Irish Emigration Database' },
+      {id: '', name: 'Voices of Migration and Return' }
     ];
 
     return <div className="page" id="search">
       <form id="query">
-        <FacetList title="Collections" items={["Enhanced British Parliamentary Papers on Ireland",
-"Irish Emigration Database", "Voices of Migration and Return"]}/>
         <fieldset>
           <legend>Search Mode</legend>
           <select>
@@ -42,6 +46,7 @@ export default class SearchPage extends React.Component {
             <option>Paper Number</option>
          </select>
        </fieldset>
+       <FacetList title="Collections" items={collections}/>
        <fieldset>
          <legend>Time Period</legend>
          <label>
@@ -123,7 +128,7 @@ class FacetList extends React.Component {
   constructor(props) {
     super(props);
     this.state = { items: this.props.items.map((x, i) => {
-      return { id: i, text: x, count: 0, checked: true };
+      return { id: i, text: x.name, count: 0, checked: true };
     })};
   }
 
