@@ -53,21 +53,32 @@ class Select extends React.Component {
 class FacetList extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { items: this.props.items.map((x, i) => {
-      return { id: i, text: x.name, count: 0, checked: true };
-    })};
+    this.state = {
+      items: this.props.items.map((x, i) => {
+        return { id: i, text: x.name, count: 0, checked: true };
+      }),
+      open: true  
+    };
   }
 
   render() {
-    return <fieldset>
+    return <fieldset className={this.state.open ? '' : 'closed'}>
       <legend>{this.props.title}</legend>
-      <a href="" className="toggle">{this.allSelected ? 'None' : 'All'}</a>
+      <button className={"toggle"} onClick={this.toggle.bind(this)}>
+        { this.state.open ? 'Close' : 'Open' }
+      </button>
+      <a href="" className="select-all">{this.allSelected ? 'None' : 'All'}</a>
       {this.state.items.map(x => <FacetItem key={x.id} {...x}/>)}
     </fieldset>
   }
 
   allSelected() {
     return false;
+  }
+
+  toggle(e) {
+    e.preventDefault();
+    this.setState({ open: ! this.state.open });
   }
 }
 

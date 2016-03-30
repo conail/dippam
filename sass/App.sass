@@ -183,6 +183,9 @@ body
       border: 1px solid #DDD
       position: relative
       margin: 0 0 1em 0
+      &.closed
+        label, a
+          display: none
       legend
         font: $headingFont
         font-size: 1.2em
@@ -203,6 +206,10 @@ body
         position: absolute
         top: 0
         right: 0
+      .select-all
+        position: absolute
+        top: 0
+        right: 4em
   #results
     margin: 0
     table
