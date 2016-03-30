@@ -58,7 +58,10 @@ export class FacetList extends React.Component {
 class FacetItem extends React.Component {
   render() {
     return <label>
-      <input onChange={this.handleChange.bind(this)} type="checkbox" checked={this.props.checked}/>
+      <input name={this.props.name}
+        onChange={this.handleChange.bind(this)}
+        type="checkbox"
+        checked={this.props.checked}/>
       <span>{this.props.text}</span>
     </label>;
   }
