@@ -8,8 +8,7 @@ export class FacetList extends React.Component {
       items: this.props.items.map((x, i) => {
         return { id: i, text: x.name, count: 0, checked: true };
       }),
-      open: true,
-      all: true
+      open: true
     };
   }
 
@@ -29,13 +28,19 @@ export class FacetList extends React.Component {
   }
 
   isAllSelected() {
-    for (let i = 0; i > this.state.items.length; i++)
+    for (let i = 0; i < this.state.items.length; i++)
       if (! this.state.items[i].checked) return false;
     return true;
   }
 
   selectAll(e) {
     e.preventDefault();
+
+    let items = this.state.items;
+    const target = ! this.isAllSelected();
+
+    for (let i = 0; i < items.length; i++) items[i].checked = target;
+    this.setState({ items: items });
   }
 
   toggle(e) {
@@ -43,20 +48,22 @@ export class FacetList extends React.Component {
     this.setState({ open: ! this.state.open });
   }
 
-  handleChange(e) {
-    
+  handleChange(id) {
+    let items = this.state.items;
+    items[id].checked = ! items[id].checked;
+    this.setState({ items: items });
   }
 }
 
-export class FacetItem extends React.Component {
+class FacetItem extends React.Component {
   render() {
     return <label>
-      <input onChange={this.handleChange} type="checkbox" checked={this.props.checked}/>
+      <input onChange={this.handleChange.bind(this)} type="checkbox" checked={this.props.checked}/>
       <span>{this.props.text}</span>
     </label>;
   }
 
   handleChange(e) {
-    this.props.onChange(e);
+    this.props.onChange(this.props.id);
   }
 }
