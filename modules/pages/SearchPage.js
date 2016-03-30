@@ -39,7 +39,9 @@ class Select extends React.Component {
     return <fieldset>
       <legend>{this.props.title}</legend>
       <select name="mode" onChange={this.handleChange}>
-        {this.props.items.map(x => <option key={x.id} {...x}>{x.name}</option>)}
+        {this.props.items.map(x =>
+          <option key={x.id} value={x.id}>{x.name}</option>
+        )}
       </select>
     </fieldset>;
   }
@@ -57,7 +59,8 @@ class FacetList extends React.Component {
       items: this.props.items.map((x, i) => {
         return { id: i, text: x.name, count: 0, checked: true };
       }),
-      open: true  
+      open: true,
+      all: true
     };
   }
 
@@ -67,18 +70,35 @@ class FacetList extends React.Component {
       <button className={"toggle"} onClick={this.toggle.bind(this)}>
         { this.state.open ? 'Close' : 'Open' }
       </button>
-      <a href="" className="select-all">{this.allSelected ? 'None' : 'All'}</a>
-      {this.state.items.map(x => <FacetItem key={x.id} {...x}/>)}
+      <a href="" onClick={this.selectAll.bind(this)} className="select-all">
+        {this.isAllSelected() ? 'None' : 'All'}
+      </a>
+      {this.state.items.map(x => 
+        <FacetItem key={x.id} {...x} onChange={this.handleChange.bind(this)}/>
+      )}
     </fieldset>
   }
 
-  allSelected() {
-    return false;
+  isAllSelected() {
+    for (let i = 0; i > this.state.items.length; i++)
+      if (! this.state.items[i].checked) return false;
+    return true;
+  }
+
+  selectAll(e) {
+    e.preventDefault();
+
+    // Select None
+    this.setState({ all: false });   
   }
 
   toggle(e) {
     e.preventDefault();
     this.setState({ open: ! this.state.open });
+  }
+
+  handleChange(e) {
+    
   }
 }
 
@@ -91,6 +111,6 @@ class FacetItem extends React.Component {
   }
 
   handleChange(e) {
-    this.props.onChange();
+    this.props.onChange(e);
   }
 }

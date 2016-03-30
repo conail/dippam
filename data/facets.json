@@ -1,53 +1,53 @@
 {
     "db": [
-	{"id": 1, "name": "Enhanced British Parliamentary Papers on Ireland", "count": 0, "active": true },
-	{"id": 2, "name": "Irish Emigration Database", "count": 0, "active": true },
-	{"id": 3, "name": "Voices of Migration and Return", "count": 0, "active": true }
+	{"id": 1, "name": "Enhanced British Parliamentary Papers on Ireland"},
+	{"id": 2, "name": "Irish Emigration Database"},
+	{"id": 3, "name": "Voices of Migration and Return"}
     ],
     "documentTypes": [ 
-	{"id": 1, "name": "Account", "db": [1], "count": 0, "active": true  },
-	{"id": 2, "name": "Bill", "db": [1], "count": 0, "active": true  },
-	{"id": 3, "name": "Report", "db": [1], "count": 0, "active": true  },
-	{"id": 4, "name": "Command Paper", "db": [1], "count": 0, "active": true },
-	{"id": 5, "name": "Diaries and Journals", "db": [2], "count": 0, "active": true },
-	{"id": 6, "name": "Family Papers", "db": [2], "count": 0, "active": true },
-	{"id": 7, "name": "Folklore, Song, Music", "db": [2], "count": 0, "active": true },
-	{"id": 8, "name": "Hansard", "db": [2], "count": 0, "active": true },
-	{"id": 9, "name": "Letters (Emigrants)", "db": [2], "count": 0, "active": true },
-	{"id": 10, "name": "Letters (Other)", "db": [2], "count": 0, "active": true },
-	{"id": 11, "name": "Births, Deaths, Marriages", "db": [2], "count": 0, "active": true },
-	{"id": 12, "name": "Newspapers Extracts", "db": [2], "count": 0, "active": true },
-	{"id": 13, "name": "Shipping Advertisements", "db": [2], "count": 0, "active": true },
-	{"id": 14, "name": "Shipping News", "db": [2], "count": 0, "active": true },
-	{"id": 15, "name": "Official Documents", "db": [2], "count": 0, "active": true },
-	{"id": 16, "name": "Periodical Extracts", "db": [2], "count": 0, "active": true },
-	{"id": 17, "name": "Statistics", "db": [2], "count": 0, "active": true },
-	{"id": 18, "name": "Wills", "db": [2], "count": 0, "active": true },
-	{"id": 19, "name": "Interviews", "db": [3], "count": 0, "active": true }
+	{"id": 1, "name": "Account", "db": 1},
+	{"id": 2, "name": "Bill", "db": 1},
+	{"id": 3, "name": "Report", "db": 1},
+	{"id": 4, "name": "Command Paper", "db": 1},
+	{"id": 5, "name": "Diaries and Journals", "db": 2},
+	{"id": 6, "name": "Family Papers", "db": 2},
+	{"id": 7, "name": "Folklore, Song, Music", "db": 2},
+	{"id": 8, "name": "Hansard", "db": 2},
+	{"id": 9, "name": "Letters (Emigrants)", "db": 2},
+	{"id": 10, "name": "Letters (Other)", "db": 2},
+	{"id": 11, "name": "Births, Deaths, Marriages", "db": 2},
+	{"id": 12, "name": "Newspapers Extracts", "db": 2},
+	{"id": 13, "name": "Shipping Advertisements", "db": 2},
+	{"id": 14, "name": "Shipping News", "db": 2},
+	{"id": 15, "name": "Official Documents", "db": 2},
+	{"id": 16, "name": "Periodical Extracts", "db": 2},
+	{"id": 17, "name": "Statistics", "db": 2},
+	{"id": 18, "name": "Wills", "db": 2},
+	{"id": 19, "name": "Interviews", "db": 3}
     ],
     "mode": [
-	{ "id": 1, "name": "Fulltext" , "count": 0, "active": true },
-	{ "id": 2, "name": "Titles", "count": 0, "active": true  },
-	{ "id": 3, "name": "Exact Title", "count": 0, "active": true  },
-	{ "id": 4, "name": "Command Number", "db": [1], "count": 0, "active": true  },
-	{ "id": 5, "name": "Paper Number", "db": [1], "count": 0, "active": true  }
+	{ "id": 1, "name": "Fulltext" },
+	{ "id": 2, "name": "Titles" },
+	{ "id": 3, "name": "Exact Title" },
+	{ "id": 4, "name": "Command Number", "db": 1},
+	{ "id": 5, "name": "Paper Number", "db": 1}
     ],
     "places": [
 	{ "id": 1, "name": "Place" },
-	{ "id": 2, "name": "Birthplace", "db": [3], "count": 0, "active": true  },
-	{ "id": 3, "name": "Childhood Residence", "db": [3], "count": 0, "active": true  },
-	{ "id": 4, "name": "Current Residence", "db": [3], "count": 0, "active": true  },
-	{ "id": 5, "name": "Destination", "db": [3], "count": 0, "active": true  }
+	{ "id": 2, "name": "Birthplace", "db": 3},
+	{ "id": 3, "name": "Childhood Residence", "db": 3},
+	{ "id": 4, "name": "Current Residence", "db": 3},
+	{ "id": 5, "name": "Destination", "db": 3}
     ],
     "period": [
 	{ "id": 1, "name": "From" },
 	{ "id": 2, "name": "To" },
-	{ "id": 3, "name": "Emigration", "db": [3], "count": 0, "active": true  },
-	{ "id": 4, "name": "Return", "db": [3], "count": 0, "active": true  }
+	{ "id": 3, "name": "Emigration", "db": 3},
+	{ "id": 4, "name": "Return", "db": 3}
     ],
     "demographics": [
-	{ "id": 1, "name": "Gender", "db": [3], "count": 0, "active": true  },
-	{ "id": 2, "name": "Age", "db": [3], "count": 0, "active": true  },
-	{ "id": 3, "name": "Denomination", "db": [3], "count": 0, "active": true  }
+	{ "id": 1, "name": "Gender", "db": 3},
+	{ "id": 2, "name": "Age", "db": 3},
+	{ "id": 3, "name": "Denomination", "db": 3}
     ]
 }
