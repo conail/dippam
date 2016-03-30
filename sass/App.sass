@@ -175,12 +175,12 @@ body
   h1
     margin: 0 0 0.5em 0
   #query
-    background: #EEE
+    background: #F7F7F7
     color: #222
     width: 16em
-    padding: 1em
+    padding: 0
     fieldset
-      border: 0
+      border: 1px solid #DDD
       position: relative
       margin: 0 0 1em 0
       legend
@@ -188,11 +188,13 @@ body
         font-size: 1.2em
         margin: 0 0 0.7em 0
       label
+        border-bottom: 1px solid #EEE
         display: block
+        padding: 0.5em
         span
           display: block
         input[type=checkbox]
-          margin: 0 0.3em 0.4em 0
+          margin: 0 0.6em 0.3em 0
           & + span
             display: inline
         select
@@ -216,7 +218,7 @@ body
             text-align: left
       tbody
         tr
-          border-bottom: 1px solid #DDD 
+          border-bottom: 1px solid #DDD
           td
             padding: 0.5em
             vertical-align: text-top
