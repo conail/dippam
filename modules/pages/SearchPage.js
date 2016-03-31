@@ -12,6 +12,7 @@ export default class SearchPage extends React.Component {
 
     const facets = require('json!../../data/facets');
     this.state = {
+      facets: facets
     };
   }
 
@@ -24,7 +25,7 @@ export default class SearchPage extends React.Component {
         <FacetList name="collections"
           title="Collections"
           items={this.state.facets.db}
-          onChange={this.handleCollectionChange}/>
+          onChange={this.changeCollection}/>
         <FacetList name="period"
           title="Time Period"
           items={this.state.facets.period}/>
@@ -55,7 +56,9 @@ export default class SearchPage extends React.Component {
     </div>;
   }
 
-  
+  changeCollection() {
+    console.log(34);
+  }
 }
 
 class Select extends React.Component {

@@ -18,11 +18,12 @@ export class FacetList extends React.Component {
       <button className={"toggle"} onClick={this.toggle.bind(this)}>
         { this.state.open ? 'Close' : 'Open' }
       </button>
-      <a href="" onClick={this.selectAll.bind(this)} className="select-all">
+      <a href="" onClick={this.selectAll.bind(this)} className="all">
         {this.isAllSelected() ? 'None' : 'All'}
       </a>
       {this.state.items.map(x => 
-        <FacetItem key={x.id} {...x} onChange={this.handleChange.bind(this)}/>
+        <FacetItem key={x.id} {...x}
+          onChange={this.handleChange.bind(this)}/>
       )}
     </fieldset>
   }
@@ -52,6 +53,7 @@ export class FacetList extends React.Component {
     let items = this.state.items;
     items[id].checked = ! items[id].checked;
     this.setState({ items: items });
+    if (this.props.onChange) this.props.onChange();
   }
 }
 

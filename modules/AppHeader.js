@@ -19,7 +19,10 @@ export default class AppHeader extends React.Component {
 	<NavLink to="/about">About</NavLink>
       	<NavLink to="/policy/ethical-use">Ethical Use</NavLink>
       </nav>
-      <input name="q" type="search" placeholder="Search Query" onChange={this.query} value={this.props.params.query} />
+      <input
+        name="q" type="search" placeholder="Search Query"
+        onFocus={this.query} onChange={this.query}
+        value={this.props.params.query} />
     </header>;
   }
 
