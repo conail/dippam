@@ -63,7 +63,6 @@ export default class SearchPage extends React.Component {
 
     for (let i = 0; i < items.length; i++)
       if (items[i].checked) active.push(items[i].id);
-    if (active.length == 2) return;
     let uri = "";
     if (active.length == 1) {
       if (active[0] == 0) uri = "/collections/eppi";
