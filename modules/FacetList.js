@@ -47,6 +47,7 @@ export class FacetList extends React.Component {
 
     for (let i = 0; i < items.length; i++) items[i].checked = target;
     this.setState({ items: items });
+    if (this.props.onChange) this.props.onChange(this);
   }
 
   toggle(e) {
