@@ -28,7 +28,10 @@ export default class AppHeader extends React.Component {
 
   query(e) {
     const q = e.target.value;
-    browserHistory.push("/search/" + q);
+
+    let prefix = location.pathname.match(/(^\/collections\/\w+)[\/.]*/)[0] || '';
+    
+    browserHistory.push(prefix + "/search/" + q);
     new Search().query(q);
   }
 }
