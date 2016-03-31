@@ -1,6 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
-import {FacetList} from '../FacetList';
+import { FacetList } from '../FacetList';
+import { browserHistory } from 'react-router';
 
 export default class SearchPage extends React.Component {
   /**
@@ -56,8 +57,21 @@ export default class SearchPage extends React.Component {
     </div>;
   }
 
-  changeCollection() {
-    console.log(34);
+  changeCollection(collection) {
+    const items = collection.state.items;
+    let active = [];
+
+    for (let i = 0; i < items.length; i++)
+      if (items[i].checked) active.push(items[i].id);
+    if (active.length == 2) return;
+    let uri = "";
+    if (active.length == 1) {
+      if (active[0] == 0) uri = "/collections/eppi";
+      if (active[0] == 1) uri = "/collections/ied";
+      if (active[0] == 2) uri = "/collections/vmr";
+    }
+    uri += location.pathname.match(/\/search\/.*/)[0];
+    browserHistory.push(uri);
   }
 }
 

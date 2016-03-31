@@ -1,8 +1,20 @@
 {
     "db": [
-	{"id": 1, "name": "Enhanced British Parliamentary Papers on Ireland"},
-	{"id": 2, "name": "Irish Emigration Database"},
-	{"id": 3, "name": "Voices of Migration and Return"}
+	{
+	    "id": 1,
+	    "name": "EPPI",
+	    "title": "Enhanced British Parliamentary Papers on Ireland"
+	},
+	{
+	    "id": 2,
+	    "name": "IED",
+	    "title": "Irish Emigration Database"
+	},
+	{
+	    "id": 3,
+	    "name": "VMR",
+	    "title": "Voices of Migration and Return"
+	}
     ],
     "documentTypes": [ 
 	{"id": 1, "name": "Account", "db": 1},

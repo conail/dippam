@@ -6,7 +6,12 @@ export class FacetList extends React.Component {
     super(props);
     this.state = {
       items: this.props.items.map((x, i) => {
-        return { id: i, text: x.name, count: 0, checked: true };
+        return {
+          id: i,
+          text: x.title || x.name,
+          count: 0,
+          checked: true
+        };
       }),
       open: true
     };
@@ -53,7 +58,7 @@ export class FacetList extends React.Component {
     let items = this.state.items;
     items[id].checked = ! items[id].checked;
     this.setState({ items: items });
-    if (this.props.onChange) this.props.onChange();
+    if (this.props.onChange) this.props.onChange(this);
   }
 }
 
