@@ -4,6 +4,17 @@ import AppHeader from './AppHeader';
 import AppFooter from './AppFooter';
 
 export default class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      search: {
+        query: '',
+        facets: [],
+        results: []
+      }
+    };
+  }
+
   render() {
     let year = new Date().getFullYear();
 
