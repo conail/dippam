@@ -27,6 +27,10 @@ VMR comprises over 90 life-narrative interviews conducted with returned and non-
 - University of Ulster
 - Libraries NI
 
+## Development Sponsors
+
+- [BrowserStack](https://www.browserstack.com/) sponsors live, web-based browser testing for this project using virtualized mobile and desktop browsers.
+
 # Contact
 
 For more information please send an email to info@dippam.ac.uk, or address mail to:
