@@ -29,7 +29,7 @@ VMR comprises over 90 life-narrative interviews conducted with returned and non-
 
 ## Development Sponsors
 
-<img src="https://www.browserstack.com/images/layout/browserstack-logo-600x315.png" height="80" />
+<img src="https://www.browserstack.com/images/layout/browserstack-logo-600x315.png" height="120" />
 
 - [BrowserStack](https://www.browserstack.com/) sponsors live, web-based browser testing for this project using virtualized mobile and desktop browsers.
 
