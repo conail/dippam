@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-	 x="0px" y="0px" viewBox="0 0 428.5 92.3" enable-background="new 0 0 428.5 92.3" xml:space="preserve">
-<switch>
-	<g i:extraneous="self">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 428.5 92.3"></svg>
+	<g>
 		<rect x="-36.1" y="-36.1" fill="#FFFFFF" width="500.8" height="164.5"/>
 		<g>
 			<circle fill="#F5BB60" cx="46.1" cy="46.1" r="46.1"/>
@@ -18,9 +15,6 @@
 			<radialGradient id="SVGID_1_" cx="46.7294" cy="37.5754" r="16.2385" gradientUnits="userSpaceOnUse">
 				<stop  offset="0" style="stop-color:#797979"/>
 				<stop  offset="1" style="stop-color:#4C4C4C"/>
-				<a:midPointStop  offset="0" style="stop-color:#797979"/>
-				<a:midPointStop  offset="0.5" style="stop-color:#797979"/>
-				<a:midPointStop  offset="1" style="stop-color:#4C4C4C"/>
 			</radialGradient>
 			<circle fill="url(#SVGID_1_)" cx="46.7" cy="37.6" r="16.2"/>
 			<circle fill="#231F20" cx="46.7" cy="37.6" r="16.2"/>
@@ -73,5 +67,4 @@
 			c-0.3,0-0.6-0.2-0.6-0.5V28.5c0-0.3,0.2-0.5,0.6-0.5h5.3c0.3,0,0.6,0.2,0.6,0.5v20.8l9.5-10.3c0.3-0.4,0.6-0.5,1.1-0.5h5.9
 			c0.3,0,0.5,0.3,0.2,0.5l-8.8,9.3l10.1,15.2c0.2,0.2,0.1,0.5-0.3,0.5H422.1z"/>
 	</g>
-</switch>
 </svg>
