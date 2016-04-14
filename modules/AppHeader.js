@@ -1,14 +1,13 @@
-import React from 'react';
-import NavLink from './NavLink';
-import Logo from './Logo';
-import { browserHistory } from 'react-router';
-import Search from './Search';
+import React, {Component} from 'react'
+import NavLink from './NavLink'
+import Logo from './Logo'
+import {browserHistory} from 'react-router'
+import Search from './Search'
 
-export default class AppHeader extends React.Component {
+class AppHeader extends Component {
   constructor(props) {
-    super(props);
-
-    if (this.props.params.query) new Search().query(this.props.params.query);
+    super(props)
+    if (this.props.params.query) new Search().query(this.props.params.query)
   }
 
   render() {
@@ -23,15 +22,16 @@ export default class AppHeader extends React.Component {
         name="q" type="search" placeholder="Search Query"
         onFocus={this.query} onChange={this.query}
         value={this.props.params.query} />
-    </header>;
+    </header>
   }
 
   query(e) {
-    const q = e.target.value;
+    // Preserve any collection prefixes that might be present, e.g. /collections/ied/
+    let prefix = /(^\/collections\/\w+)[\/.]*/.exec(location.pathname) || ''
 
-    let prefix = location.pathname.match(/(^\/collections\/\w+)[\/.]*/);
-    prefix = (prefix) ? prefix[0] : '';
-    browserHistory.push(prefix + "/search/" + q);
-    new Search().query(q);
+    browserHistory.push(`${prefix}/search/${e.target.value}`)
+    new Search().query(e.target.value)
   }
 }
+
+export default AppHeader
