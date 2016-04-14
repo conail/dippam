@@ -1,9 +1,9 @@
-import React from 'react';
-import {Link} from 'react-router';
+import React, {Component} from 'react'
+import {Link} from 'react-router'
 
-export default class AppFooter extends React.Component {
+export default class AppFooter extends Component {
   render() {
-    const year = new Date().getFullYear();
+    const year = new Date().getFullYear()
 
     return <footer>
       <div className="sponsors">
@@ -36,6 +36,6 @@ export default class AppFooter extends React.Component {
         </ul>
       </div>
       <p className="copyright">Copyright &copy; {year} DIPPAM.  All Rights Reserved.</p>
-    </footer>;
+    </footer>
   }
 }
