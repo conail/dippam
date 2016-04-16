@@ -4,7 +4,7 @@ import Logo from './Logo'
 import {browserHistory} from 'react-router'
 import Search from './Search'
 
-class AppHeader extends Component {
+export default class AppHeader extends Component {
   constructor(props) {
     super(props)
     if (this.props.params.query) new Search().query(this.props.params.query)
@@ -34,4 +34,4 @@ class AppHeader extends Component {
   }
 }
 
-export default AppHeader
+

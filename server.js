@@ -1,22 +1,22 @@
-import express from 'express';
-import path from 'path';
-import compression from 'compression';
-import React from 'react';
-import { renderToString } from 'react-dom/server';
-import { match, RouterContext } from 'react-router';
-import routes from './modules/routes';
+import express from 'express'
+import path from 'path'
+import compression from 'compression'
+import React from 'react'
+import { renderToString } from 'react-dom/server'
+import { match, RouterContext } from 'react-router'
+import routes from './modules/routes'
 
-var app = express();
-app.use(compression());
-app.use(express.static(path.join(__dirname, 'public')));
+var app = express()
+app.use(compression())
+app.use(express.static(path.join(__dirname, 'public')))
 app.get('*', (req, res) => {
   match({ routes, location: req.url }, (err, redirect, props) => {
-    if (err) return res.status(500).send(err.message);
-    if (redirect) return res.redirect(redirect.pathname + redirect.search);
-    if (props) return res.send(renderPage(renderToString(<RouterContext {...props}/>)));
-    res.status(404).send('Not Found');
-  });
-});
+    if (err) return res.status(500).send(err.message)
+      if (redirect) return res.redirect(`${redirect.pathname}${redirect.search`)
+    if (props) return res.send(renderPage(renderToString(<RouterContext {...props}/>)))
+    res.status(404).send('Not Found')
+  })
+})
 
 function renderPage(appHtml) {
   return `<!doctype html public="storage">

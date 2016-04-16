@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import App    from './App';
-import HomePage   from './pages/HomePage';
-import SearchPage from './pages/SearchPage';
-import CollectionPage from './pages/CollectionPage';
-import DocumentPage from './pages/DocumentPage';
-import MarkdownPage from './pages/MarkdownPage';
+import App from './App'
+import HomePage from './pages/HomePage'
+import SearchPage from './pages/SearchPage'
+import CollectionPage from './pages/CollectionPage'
+import DocumentPage from './pages/DocumentPage'
+import MarkdownPage from './pages/MarkdownPage'
 
 module.exports = <Route path="/" component={App}>
   <IndexRoute component={HomePage}/>
