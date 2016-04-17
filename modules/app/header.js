@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import NavLink from '../NavLink'
+import NavLink from './navlink'
 import Logo from '../Logo'
 import {browserHistory} from 'react-router'
 import Search from '../Search'

@@ -1,5 +1,4 @@
 import React, {Component} from "react"
-import NavLink from "../NavLink"
 import Header from "./header"
 import Footer from "./footer"
 import "../../sass/App.sass"
