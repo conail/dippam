@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import NavLink from './NavLink'
-import Logo from './Logo'
+import NavLink from '../NavLink'
+import Logo from '../Logo'
 import {browserHistory} from 'react-router'
-import Search from './Search'
+import Search from '../Search'
 
 export default class AppHeader extends Component {
   constructor(props) {
