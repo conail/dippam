@@ -17,7 +17,7 @@ const API_BASE = "http://localhost:3000"
 //  xhr.onerror = () => reject(this.statusText)
 //});
 
-render(<Router routes={routes} history={browserHistory}/>, document.body.children[0])
+render(<Router routes={routes} history={browserHistory}/>, document.querySelector("#app"))
 
 
 
