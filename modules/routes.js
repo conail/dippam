@@ -1,6 +1,6 @@
 import React from "react"
 import {Router, Route, browserHistory, IndexRoute} from "react-router"
-import App from "./xxapp/app"
+import App from "./app/app"
 import HomePage from "./pages/HomePage"
 import SearchPage from "./pages/SearchPage"
 import CollectionPage from "./pages/CollectionPage"
