@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import NavLink from './navlink'
 import Logo from '../Logo'
 import {browserHistory} from 'react-router'
-import Search from '../Search'
+import Search from '../search'
 
 export default class AppHeader extends Component {
   constructor(props) {
