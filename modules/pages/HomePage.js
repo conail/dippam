@@ -1,14 +1,11 @@
 import React, {Component} from 'react'
 import CollectionShort from '../CollectionShort'
+import * as json from 'json!../../data/collections.json'
 
 export default class HomePage extends Component {
-  constructor(props) {
-    super(props)
-    this.state = require('json!../../data/collections.json')
-  }
-
   render() {
-    const [dippam, ...collections] = this.state.collections
+    console.log(json)
+    const [dippam, ...collections] = json.collections
 
     return <div id="home">
       <div>
@@ -16,7 +13,7 @@ export default class HomePage extends Component {
         <p>{dippam.description}</p>
       </div>
       <div id="collections">
-        { collections.map((i) => {return <CollectionShort key={i.id} {...i}/>}) }
+        {collections.map(i => <CollectionShort key={i.id} {...i}/>)}
       </div>
       {this.props.children}
     </div>
