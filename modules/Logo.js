@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 export default class Logo extends React.Component {
   render() {
@@ -6,8 +6,8 @@ export default class Logo extends React.Component {
       <svg viewBox="0 0 43 56">
         <defs>
           <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" style={{ stopOpacity: '0.2'  }} />
-            <stop offset="100%" style={{ stopOpacity: '1' }} />
+            <stop offset="0%" style={{stopOpacity: 0.2}} />
+            <stop offset="100%" style={{stopOpacity: 1}} />
           </linearGradient>
         </defs>
         <g>
@@ -17,6 +17,6 @@ export default class Logo extends React.Component {
         </g>
       </svg>
       <h1>{this.props.params.collection || 'DIPPAM'}</h1>
-    </div>;
+    </div>
   }
 }

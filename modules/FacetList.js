@@ -1,9 +1,8 @@
-import React from 'react';
-import _ from 'lodash';
+import React, {Component} from 'react'
 
-export class FacetList extends React.Component {
+export class FacetList extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
       items: this.props.items.map((x, i) => {
         return {
@@ -11,10 +10,10 @@ export class FacetList extends React.Component {
           text: x.title || x.name,
           count: 0,
           checked: true
-        };
+        }
       }),
       open: true
-    };
+    }
   }
 
   render() {
@@ -34,25 +33,22 @@ export class FacetList extends React.Component {
   }
 
   isAllSelected() {
-    for (let i = 0; i < this.state.items.length; i++)
-      if (! this.state.items[i].checked) return false;
-    return true;
+    for (const i of this.state.items) if (! i.checked) return false
+    return true
   }
 
   selectAll(e) {
-    e.preventDefault();
+    e.preventDefault()
 
-    let items = this.state.items;
-    const target = ! this.isAllSelected();
-
-    for (let i = 0; i < items.length; i++) items[i].checked = target;
-    this.setState({ items: items });
-    if (this.props.onChange) this.props.onChange(this);
+    const target = ! this.isAllSelected()
+    for (const i of this.state.items) i.checked = target
+    this.setState({items: this.state.items})
+    if (this.props.onChange) this.props.onChange(this)
   }
 
   toggle(e) {
-    e.preventDefault();
-    this.setState({ open: ! this.state.open });
+    e.preventDefault()
+    this.setState({ open: ! this.state.open })
   }
 
   handleChange(id) {
@@ -63,7 +59,7 @@ export class FacetList extends React.Component {
   }
 }
 
-class FacetItem extends React.Component {
+class FacetItem extends Component {
   render() {
     return <label>
       <input name={this.props.name}
@@ -75,6 +71,6 @@ class FacetItem extends React.Component {
   }
 
   handleChange(e) {
-    this.props.onChange(this.props.id);
+    this.props.onChange(this.props.id)
   }
 }

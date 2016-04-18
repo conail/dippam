@@ -1,7 +1,6 @@
 import React, {Component} from "react"
 import Header from "./header"
 import Footer from "./footer"
-import "../../sass/App.sass"
 
 export default class App extends Component {
   render() {
