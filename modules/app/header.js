@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import NavLink from './navlink'
-import Logo from '../Logo'
+import Logo from './logo'
 import {browserHistory} from 'react-router'
 import Search from '../search'
 
