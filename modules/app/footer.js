@@ -17,7 +17,7 @@ const AppFooter = () => {
     </div>
     <div className="contact">
       <h3>Contact</h3>
-      <p>For more information, please email info@dippam.ac.uk or address mail to:</p>
+      <p>For more information, please email <a href="mailto:info@dippam.ac.uk">info@dippam.ac.uk</a> or address mail to:</p>
       <address>
         DIPPAM Project,
         School of History and Anthropology,
