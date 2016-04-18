@@ -7,7 +7,7 @@ import Search from '../Search'
 export default class AppHeader extends Component {
   constructor(props) {
     super(props)
-    new Search().query(this.props.params.query || '')
+    Search.query(this.props.params.query)
   }
 
   render() {
