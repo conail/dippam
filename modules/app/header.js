@@ -1,13 +1,13 @@
-import React, {Component} from 'react'
-import NavLink from './navlink'
-import Logo from './logo'
-import {browserHistory} from 'react-router'
-import Search from '../search'
+import React, {Component} from 'react';
+import NavLink from './navlink';
+import Logo from './logo';
+import {browserHistory} from 'react-router';
+import Search from '../search';
 
 export default class AppHeader extends Component {
   constructor(props) {
-    super(props)
-    Search.query(this.props.params.query)
+    super(props);
+    Search.query(this.props.params.query);
   }
 
   render() {
@@ -27,10 +27,10 @@ export default class AppHeader extends Component {
 
   query(e) {
     // Preserve any collection prefixes that might be present, e.g. /collections/ied/
-    let prefix = /(^\/collections\/\w+)[\/.]*/.exec(location.pathname) || ''
+    let prefix = /(^\/collections\/\w+)[\/.]*/.exec(location.pathname) || '';
 
-    browserHistory.push(`${prefix}/search/${e.target.value}`)
-    new Search().query(e.target.value)
+    browserHistory.push(`${prefix}/search/${e.target.value}`);
+    new Search().query(e.target.value);
   }
 }
 
