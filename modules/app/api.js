@@ -1,10 +1,16 @@
-import http from "./http.js";
+import http from "./http";
 
 const ENDPOINT = "http://localhost:3000/";
 
-function get(uri) { return http.get(ENDPOINT + uri); }
+export default function api(){};
 
-export default class api {
-  static collections() { return get("collections"); }
-  static documents() { return get("documents"); }
-}
+var get = (uri) => http.get(ENDPOINT + uri);
+
+// Index
+api.collections  = () => get("collections");
+api.documents    = () => get("documents");
+api.formats      = () => get("formats");
+api.modes        = () => get("modes");
+api.periods      = () => get("periods");
+api.demographics = () => get("demographics");
+api.places       = () => get("places");
