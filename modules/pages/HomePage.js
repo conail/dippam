@@ -1,19 +1,22 @@
-import React, {Component} from "react";
-import CollectionShort from "../CollectionShort";
+import React from "react";
+import {Link} from "react-router";
 
-export default class HomePage extends Component {
-  render() {
-    if (! this.props.collections) return <p></p>;
-    const [dippam, ...collections] = this.props.collections;
-    return <div id="home">
-      <div>
-        <h1>{dippam.name}</h1>
-        <p>{dippam.description}</p>
-      </div>
-      <div id="collections">
-        {collections.map(i => <CollectionShort key={i.id} {...i}/>)}
-      </div>
-      {this.props.children}
+const HomePage = ({collections}) => {
+  if (!collections) return <p>Loading</p>;
+  const [dippam, ...rest] = collections;
+  return <div id="home">
+    <div>
+      <h1>{dippam.name}</h1>
+      <p>{dippam.description}</p>
     </div>
-  }
-}
+    <div id="collections">
+      {rest.map(x => <div key={x.id} className="{x.id} collection">
+        <h2><Link to={"/collections/"+x.name}>{x.title}</Link></h2>
+        <p>{x.description}</p>
+        <Link to={"/collections/"+x.name}>Browse</Link>
+      </div>)}
+    </div>
+  </div>;
+};
+
+export default HomePage;
