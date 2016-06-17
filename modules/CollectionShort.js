@@ -1,15 +1,10 @@
-import React, {Component} from 'react'
-import {Link} from 'react-router'
+import React, {Component} from 'react';
+import {Link} from 'react-router';
 
-export default class CollectionShort extends Component {
-  render() {
-    const URI = `/collections/${this.props.id}`
-    const CLASS = `${this.props.id} collection`
+const CollectionShort = (props) => <div className="{props.id} collection">
+  <h2><Link to={"/collections/"+props.name}>{props.title}</Link></h2>
+  <p>{props.description}</p>
+  <Link to={"/collections/"+props.name}>Browse</Link>
+</div>;
 
-    return <div className={CLASS}>
-      <h2><Link to={URI}>{this.props.title}</Link></h2>
-      <p>{this.props.description}</p>
-      <Link to={URI}>Browse</Link>
-    </div>
-  }
-}
+export default CollectionShort;

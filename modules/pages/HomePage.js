@@ -1,15 +1,13 @@
-import React, {Component} from 'react'
-import CollectionShort from '../CollectionShort'
-import * as json from 'json!../../data/collections.json'
+import React, {Component} from "react";
+import CollectionShort from "../CollectionShort";
 
 export default class HomePage extends Component {
   render() {
-    console.log(json)
-    const [dippam, ...collections] = json.collections
-
+    if (! this.props.collections) return <p></p>;
+    const [dippam, ...collections] = this.props.collections;
     return <div id="home">
       <div>
-        <h1>{dippam.title}</h1>
+        <h1>{dippam.name}</h1>
         <p>{dippam.description}</p>
       </div>
       <div id="collections">

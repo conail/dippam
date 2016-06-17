@@ -6,19 +6,13 @@ import api from "./api";
 export default class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {collections: []};
-  }
-  
-  componentDidMount() {
-    api.collections().then(x => this.setState(x));
+    api.collections().then(x => this.setState({collections: x}));
   }
   
   render() {
     return <div className={this.props.params.collection}>
       <Header {...this.props} {...this.state}/>
-      <main>
-        {this.props.children}
-      </main>
+      <main>{React.cloneElement(this.props.children, {...this.state})}</main>
       <Footer/>
     </div>
   }
