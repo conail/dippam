@@ -2,7 +2,6 @@
 import styles from "./sass/App.sass";
 import React from "react";
 import {render} from "react-dom";
-import api from "./modules/app/api";
 import {Router, Route, browserHistory, IndexRoute} from "react-router";
 import App from "./modules/app/app";
 import HomePage from "./modules/pages/HomePage";
@@ -25,7 +24,7 @@ render(<Router history={browserHistory}>
     <Route path="/policy/privacy" component={MarkdownPage}/>
     <Route path="/document/:id" component={DocumentPage}/>
   </Route>
- </Router>, document.querySelector("#app"));
+</Router>, document.querySelector("#app"));
 
 
 
